@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahaiswa</title>
+</head>
+<body style="background-color: aqua;">
+    <form style="border: 1px solid black; padding: 10px; background-color: skyblue;">
+		<h1 style="color: blue;">Form <span style="color: blueviolet;">Maha</span>siswa</h1>
+
+		<div>
+			<input type="hidden" id="NPM" />
+
+			<label for="nama">Nama Mahasiswa</label>
+			<input type="text" id="nama" placeholder="Masukan Nama">
+
+			<label for="usia">Usia Mahasiswa</label>
+			<input type="text" id="usia" placeholder="Masukan Usia">
+
+			<button onclick="new Mahasiswa().updateData()">Save</button>
+		</div>
+    </form>
+    <fieldset style="background-color: yellow;">
+		<legend>List Mahasiswa</legend>
+		<table style="border: 1px solid black;">
+			<thead>
+				<tr style=" border: 1px solid black;">
+					<th >NPM</th>
+					<th>Nama</th>
+					<th>Usia</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody id="list_mahasiswa">
+
+			</tbody>
+		</table>
+	</fieldset>
+    <script type="text/javascript" src="js/mahasiswa.js"></script>
+</body>
+</html>
